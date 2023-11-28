@@ -1,8 +1,8 @@
+import PageComponent from "../components/PageComponent";
+
 const Dashboard = () => {
   return (
-    <div>
-      Dashboard
-    </div>
+    <PageComponent title="Dashboard">Children</PageComponent>
   );
 };
 
