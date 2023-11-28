@@ -1,8 +1,8 @@
-const Login = () => {
+const Signup = () => {
   return (
     <>
       <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-        Sign in to your account
+        Create your account
       </h2>
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form className="space-y-6" action="#" method="POST">
@@ -33,14 +33,6 @@ const Login = () => {
               >
                 Password
               </label>
-              <div className="text-sm">
-                <a
-                  href="#"
-                  className="font-semibold text-indigo-600 hover:text-indigo-500"
-                >
-                  Forgot password?
-                </a>
-              </div>
             </div>
             <div className="mt-2">
               <input
@@ -65,12 +57,12 @@ const Login = () => {
         </form>
 
         <p className="mt-10 text-center text-sm text-gray-500">
-          Not a member?{" "}
+          Already have an account? 
           <a
-            href="/signup"
-            className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
+            href="/login"
+            className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500 pl-1"
           >
-            Start a 14 day free trial
+            Login
           </a>
         </p>
       </div>
@@ -78,4 +70,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
