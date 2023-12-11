@@ -8,6 +8,7 @@ const axiosClient = axios.create({
 axiosClient.interceptors.request.use((config) => {
   const token = '123'
   config.headers.Authorization = `Bearer`
+  return config
 })
 
 axiosClient.interceptors.response.use(response => {
@@ -15,7 +16,9 @@ axiosClient.interceptors.response.use(response => {
 }, error => {
   if (error.response && error.response.status === 401) {
     router.navigate('/login')
+    return error
   }
+  throw error;
 })
 
 export default axiosClient

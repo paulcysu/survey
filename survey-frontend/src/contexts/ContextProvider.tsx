@@ -190,7 +190,7 @@ const user = {
 
 export const ContextProvider = ({ children }: ContextProviderProps) => {
   const [currentUser, setCurrentUser] = useState(user);
-  const [userToken, setUserToken] = useState<string>('token');
+  const [userToken, setUserToken] = useState<string>('');
   const [surveys, setSurveys] = useState([...tmpSurveys]);
 
   return (
